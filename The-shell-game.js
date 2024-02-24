@@ -22,5 +22,12 @@ You can assume all swaps are valid, and involve two distinct indices.
 
 // Solution
 
+function find_the_ball(start,swaps) {
+  return swaps.reduce(function(ball, swap) {
+    if (swap[0] === ball) ball = swap[1];
+    else if (swap[1] === ball) ball = swap[0];
+    return ball;
+  }, start);
+}
 
 // or
