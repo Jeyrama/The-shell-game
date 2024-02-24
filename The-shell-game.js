@@ -31,3 +31,15 @@ function find_the_ball(start,swaps) {
 }
 
 // or
+
+const find_the_ball = (start, swaps) => {
+  let ball = start;
+  swaps.forEach(s => {
+      if (s[0] == ball) {
+          ball = s[1]
+      } else if (s[1] == ball) {
+          ball = s[0];
+      }
+  });
+  return ball;
+}
