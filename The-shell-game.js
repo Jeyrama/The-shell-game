@@ -18,3 +18,6 @@ find_the_ball(0, swaps) == 2
 There aren't necessarily only three cups in this game, but there will be at least two. 
 You can assume all swaps are valid, and involve two distinct indices.
 */
+
+
+// or
